@@ -1,0 +1,35 @@
+<ion-card>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img [src]="user.picture.large">
+    </ion-avatar>
+    <h2>{{user.name.first | capitalize}} {{user.name.last | capitalize}}</h2>
+    <p>Birth: {{user.dob | date: 'longDate'}}</p>
+  </ion-item>
+
+  <!-- <img src="https://cataas.com/cat"> -->
+  <img alt="This is a doggo" [src]="user.image">
+
+  <ion-card-content>
+    <p>Email: {{user.email}}</p>
+    <p>Phone: {{user.cell}}</p>
+    <p>Address: {{user.location.street | capitalize}}, {{user.location.city | capitalize}}, {{user.location.state | capitalize}}</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>{{user.likes}} Likes</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>{{user.comments}} Comments</div>
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>

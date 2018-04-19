@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "PWA Demo - Insolabs",
+  "short_name": "Insolabs",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
